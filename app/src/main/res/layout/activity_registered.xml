@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.yangyang.lifehelper.ui.RegisteredActivity">
+    <EditText
+        android:id="@+id/et_user"
+        android:hint="用户名"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/et_age"
+        android:hint="年龄"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/et_desc"
+        android:hint="简介"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <RadioGroup
+        android:id="@+id/mRadioGroup"
+        android:orientation="horizontal"
+        android:gravity="left"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/rb_boy"
+            android:text="男"
+            android:checked="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <RadioButton
+            android:id="@+id/rb_girl"
+            android:text="女"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RadioGroup>
+    <EditText
+        android:id="@+id/et_pass"
+        android:inputType="textPassword"
+        android:hint="密码"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:inputType="textPassword"
+        android:id="@+id/et_password"
+        android:hint="再次输入密码"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/et_email"
+        android:hint="邮箱"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:textSize="15dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:text="注册成功需要前往邮箱进行验证，否则无发登陆"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/btn_registered_register"
+        android:background="@drawable/button_bg"
+        android:textColor="@android:color/white"
+        android:text="注册"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>
